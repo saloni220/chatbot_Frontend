@@ -44,7 +44,7 @@ export default function ChatWindow() {
     } catch (err) {
       setMessages((m) => [
         ...m,
-        { id: Date.now() + 1, who: "bot", text: "Server error." },
+        { id: Date.now() + 1, who: "bot", text: "Server error.",err },
       ]);
       setIsTyping(false);
     }

@@ -1,9 +1,14 @@
-export default function Message({ who, text }) {
+import ChatWindow from "./components/Chatwindow";
+import Message from "./components/Message";
+
+export default function App() {
   return (
-    <div className={`msg-row ${who}`}>
-      <div className="msg-bubble">
-        {text}
-      </div>
+    <div>
+      <h1>Hello React!</h1>
+      <ChatWindow/>
+      {/* <Message who="user" text="Hello from user!" />
+      <Message who="bot" text="Hello from bot!" /> */}
+      
     </div>
   );
 }
